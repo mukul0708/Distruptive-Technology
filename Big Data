@@ -1,0 +1,17 @@
+import pandas as mukul
+df = mukul.read_csv('/content/data14.csv')
+df.head(5)
+# data types
+import pandas as pd
+df.dtypes
+print(df.shape)
+print("Rows",df.shape[0])
+print("Column",df.shape[1])
+df.tail(10)
+df.head(61).tail(10)
+df.columns
+len(df.columns)
+df.index
+df.describe()
+df.info()
+df.T   #to transpose
