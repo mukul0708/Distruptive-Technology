@@ -1,0 +1,4 @@
+  fp=open('/content/data14.csv')
+  for line in fp:
+    print (line)
+  fp.close
