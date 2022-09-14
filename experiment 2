@@ -1,0 +1,40 @@
+!pip install pycaret
+
+from pycaret.datasets import get_data
+
+datasets = get_data("index")
+
+cancerdataset = get_data("cancer")
+
+cancerdataset.describe()
+
+print("shape :",cancerdataset.shape)
+
+print("rows :",cancerdataset.shape[0])
+
+print("column :",cancerdataset.shape[1])
+
+cancerdataset.mean()
+
+cancerdataset.isnull().sum()
+
+cancerdataset.dropna()
+
+cancerdataset.fillna(0)
+
+import matplotlib.pyplot as plt
+import numpy as np
+x=cancerdataset['age']
+plt.xlabel('Age Range')
+plt.ylabel('Frequency')
+plt.hist(x, color = "red", bins=80)
+plt.show()
+
+import matplotlib.pyplot as plt
+x=cancerdataset['age']
+y=cancerdataset['irradiat']
+plt.title("scatter graph")
+plt.xlabel('Age Range')
+plt.ylabel('Frequency')
+plt.scatter(x,y)
+plt.show()
