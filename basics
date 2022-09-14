@@ -1,0 +1,25 @@
+# from traitlets.utils import bunch
+a = 300
+b = 200
+print("a = 300")
+print("b = 200")
+
+#sum
+sum = a + b 
+print("sum = ",sum)
+
+#product
+product = a * b
+print("product = ",product)
+
+#difference
+difference = a - b
+print("difference = ",difference)
+
+#division
+division = a / b
+print("division = ",division)
+
+#remainder
+remainder = a % b
+print("remainder = ",remainder)
