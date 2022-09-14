@@ -1,0 +1,29 @@
+import matplotlib.pyplot as plt
+x = [0,1,2,3,4]
+y = [i**2 for i in x]
+plt.plot(x,y)
+plt.show()
+
+import matplotlib.pyplot as plt
+x = [1,2,3]
+y = [2,4,6]
+plt.plot(x,y)
+plt.title('title is beyond your limits ')
+plt.xlabel('X axis')
+plt.ylabel('Y axis')
+
+import matplotlib.pyplot as plt
+x=["Math","DT","DE","BIO","LSM"]
+y=[100,100,100,100,100]
+plt.title('Example of Puntual Man')
+plt.bar(x,y,color="green")
+plt.xlabel('Subjects')
+plt.ylabel('Attendence(in %)')
+
+import matplotlib.pyplot as plt
+x=["Math","DT","DE","BIO","LSM"]
+y=[100,100,100,100,100]
+plt.title('Example of Puntual Man')
+plt.scatter(x,y,color="green")
+plt.xlabel('Subjects')
+plt.ylabel('Attendence(in %)')
